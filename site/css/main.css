@@ -27,6 +27,7 @@ body {
   margin: 0;
   font-family: "Graphik Web Regular Regular", sans-serif;
   color: white;
+  background-color: #181818;
 }
 
 button {
@@ -39,7 +40,6 @@ a {
 }
 
 header {
-  background: #181818;
   height: 1520px;
   width: 1343px;
   display: flex;
@@ -85,7 +85,6 @@ header .firstcontent p:nth-child(2) {
   letter-spacing: 0.2px;
   text-align: center;
   width: 600px;
-  padding: 0;
 }
 header .firstcontent .buttons {
   margin-top: 100px;
@@ -137,5 +136,91 @@ header .firstcontent .screens .gradient {
   width: 1339px;
   height: 551px;
   z-index: 1;
+}
+
+.secondcontent {
+  border: 2px solid white;
+  margin-top: 70px;
+  width: 1339px;
+  height: 1112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.secondcontent p:nth-child(1) {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.2px;
+  margin: 30px 0;
+}
+.secondcontent p:nth-child(2) {
+  width: 600px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+.secondcontent .innerchild {
+  width: 80%;
+  height: 70%;
+  margin-top: 100px;
+  display: flex;
+}
+.secondcontent .innerchild .leftblock {
+  width: 65%;
+  height: 100%;
+  display: flex;
+}
+.secondcontent .innerchild .leftblock img:nth-child(1) {
+  width: 696px;
+  height: 659px;
+  box-shadow: 0 4 31 0 rgba(0, 0, 0, 0.1490196078);
+}
+.secondcontent .innerchild .leftblock img:nth-child(2) {
+  position: relative;
+  width: 400px;
+  height: 276px;
+  right: 395px;
+  top: 435px;
+  box-shadow: 0 4 31 0 rgba(0, 0, 0, 0.1490196078);
+}
+.secondcontent .innerchild .rightblock {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondcontent .innerchild .rightblock .textblock {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 269px;
+  height: 196px;
+}
+.secondcontent .innerchild .rightblock .textblock .header {
+  width: 204.49px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.secondcontent .innerchild .rightblock .textblock .header img {
+  margin-top: 5px;
+}
+.secondcontent .innerchild .rightblock .textblock .header p {
+  text-align: left;
+  margin-left: 10px;
+}
+.secondcontent .innerchild .rightblock .textblock .footer {
+  width: 265px;
+  height: 110px;
+}
+.secondcontent .innerchild .rightblock .textblock .footer p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0;
 }
 /*# sourceMappingURL=site/main.css.map */

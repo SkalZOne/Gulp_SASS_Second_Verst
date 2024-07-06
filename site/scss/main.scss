@@ -1,5 +1,3 @@
-$dark_background: #181818;
-
 @import url(https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular);
 
 %purple_button {
@@ -32,6 +30,7 @@ body {
     margin: 0;
     font-family: 'Graphik Web Regular Regular', sans-serif;
     color: white;
+    background-color: #181818;
 }
 
 button {
@@ -46,7 +45,6 @@ a {
 // Хэдер
 
 header {
-    background: $dark_background;
     height: 1520px;
     width: 1343px;
     display: flex;
@@ -101,7 +99,6 @@ header {
             letter-spacing: 0.2px;
             text-align: center;
             width: 600px;
-            padding: 0;
         }
 
         .buttons {
@@ -165,6 +162,107 @@ header {
             }
         }
     }
+}
+
+// Второй блок-контент
+.secondcontent {
+    border: 2px solid white;
+    margin-top: 70px;
+    width: 1339px;
+    height: 1112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p:nth-child(1) {
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: 0.2px;
+        margin: 30px 0;
+    }
+
+    p:nth-child(2) {
+        width: 600px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        margin: 0;
+    }
+
+    .innerchild {
+        width: 80%;
+        height: 70%;
+        margin-top: 100px;
+        display: flex;
+
+        .leftblock {
+            width: 65%;
+            height: 100%;
+            display: flex;
+
+            img:nth-child(1) {
+                width: 696px;
+                height: 659px;
+                box-shadow: 0 4 31 0 #00000026;
+            }
+
+            img:nth-child(2) {
+                position: relative;
+                width: 400px;
+                height: 276px;
+                right: 395px;
+                top: 435px;
+                box-shadow: 0 4 31 0 #00000026;
+            }
+        }
+
+        .rightblock {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .textblock {
+                margin-left: 30px;
+                margin-bottom: 20px;
+                width: 269px;
+                height: 196px;
+
+                .header {
+                    width: 204.49px;
+                    height: 80px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    img {
+                        margin-top: 5px;
+                    }
+
+                    p {
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+                }
+                
+                .footer {
+                    width: 265px;
+                    height: 110px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 

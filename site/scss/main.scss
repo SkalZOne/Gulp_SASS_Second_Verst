@@ -15,7 +15,7 @@
 %black_button {
     width: 139px;
     height: 52px;
-    background-color: #00000026;
+    background-color: transparent;
     border: 1px solid white;
     font-size: 17px;
     color: white;
@@ -443,4 +443,53 @@ header {
 
 }
 
+// Пятый блок-контент
+.fifthcontent {
+    margin-top: 140px;
+    width: 1339px;
+    height: 484.55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    p:nth-child(1) {
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: 0.2px;
+        margin: 40px 0;
+    }
+
+    p:nth-child(2) {
+        margin: 0;
+        width: 600px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        text-align: center;
+    }
+
+    .brands {
+        margin-top: 80px;
+        width: 831px;
+        height: 70.55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        img:nth-child(6) {
+            width: 149.85px;
+            height: 59.94px;
+        }
+    }
+
+    button {
+        margin-top: 40px;
+        @extend %black_button;
+        width: 176px;
+    }
+}

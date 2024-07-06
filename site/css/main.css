@@ -10,10 +10,10 @@
   letter-spacing: 0.2px;
 }
 
-.fourthcontent button, header .firstcontent .buttons button:nth-child(2), header .navbar button {
+.fifthcontent button, .fourthcontent button, header .firstcontent .buttons button:nth-child(2), header .navbar button {
   width: 139px;
   height: 52px;
-  background-color: rgba(0, 0, 0, 0.1490196078);
+  background-color: transparent;
   border: 1px solid white;
   font-size: 17px;
   color: white;
@@ -372,5 +372,48 @@ header .firstcontent .screens .gradient {
   margin-top: 60px;
   width: 159px;
   height: 52px;
+}
+
+.fifthcontent {
+  margin-top: 140px;
+  width: 1339px;
+  height: 484.55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fifthcontent p:nth-child(1) {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.2px;
+  margin: 40px 0;
+}
+.fifthcontent p:nth-child(2) {
+  margin: 0;
+  width: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.fifthcontent .brands {
+  margin-top: 80px;
+  width: 831px;
+  height: 70.55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fifthcontent .brands img {
+  width: 60px;
+  height: 60px;
+}
+.fifthcontent .brands img:nth-child(6) {
+  width: 149.85px;
+  height: 59.94px;
+}
+.fifthcontent button {
+  margin-top: 40px;
+  width: 176px;
 }
 /*# sourceMappingURL=site/main.css.map */

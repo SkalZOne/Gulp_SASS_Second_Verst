@@ -416,4 +416,67 @@ header .firstcontent .screens .gradient {
   margin-top: 40px;
   width: 176px;
 }
+
+.sixcontent {
+  margin-top: 100px;
+  border: 2px solid white;
+  width: 1339px;
+  height: 884px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sixcontent p {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.2px;
+}
+.sixcontent .content {
+  width: 883px;
+  height: 652px;
+  display: flex;
+  margin-top: 40px;
+}
+.sixcontent .content .testimonial-items {
+  width: 50%;
+  height: 100%;
+}
+.sixcontent .content .testimonial-items .card {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 430px;
+  height: 304px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sixcontent .content .testimonial-items .card .client {
+  border: 2px solid white;
+  width: 200px;
+  height: 50px;
+  margin-left: 30px;
+  display: flex;
+}
+.sixcontent .content .testimonial-items .card .client .name {
+  height: 50px;
+}
+.sixcontent .content .testimonial-items .card .client .name p {
+  margin: 0 20px;
+}
+.sixcontent .content .testimonial-items .card .client .name p:nth-child(2) {
+  position: relative;
+  bottom: 145px;
+}
+.sixcontent .content .testimonial-items .card p {
+  width: 320px;
+  height: 168px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-left: 30px;
+}
+.sixcontent .content .testimonial-items:nth-child(1) .card:nth-child(1) {
+  height: 328px;
+}
 /*# sourceMappingURL=site/main.css.map */

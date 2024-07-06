@@ -1,30 +1,34 @@
 import gulp from 'gulp';
-import * as cleanSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-const sass = gulpSass(cleanSass)
-import watch from 'gulp-watch';
+const sass = gulpSass(dartSass)
 import sourcemaps from 'gulp-sourcemaps';
+import watch from 'gulp-watch';
 import browserSync from 'browser-sync';
 
-// Таска на компаил SASS
+
+// Компиляция SASS
 gulp.task('sass-compile', function(){
-    return gulp.src('./site/scss/**/*.scss')
+    return gulp.src('site/scss/**/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.write(''))
-    .pipe(gulp.dest('./site/css/'))
+    .pipe(sass().on('error', sass.logError)) 
+    .pipe(sourcemaps.write('site/'))
+    .pipe(gulp.dest('site/css/'))
     .pipe(browserSync.stream())
 })
 
-// Таска на сервер
-gulp.task('default', function(){
+// Автообработка
+gulp.task('watch', function(){
+    watch('./site/scss/**/*.scss', gulp.series('sass-compile'));
+})
+// Auto-reload
+gulp.task('browserSyncTask', function(){
     browserSync.init({
         server: {
-            baseDir: './site/'
+            baseDir: 'site/'
         },
     notify: false
-    })
-
-    gulp.watch('./site/scss/**/*.scss', gulp.series('sass-compile'))
-    gulp.watch('./site/*.html').on('change', browserSync.reload)
+    });
+  watch('site/scss/**/*.scss', gulp.series('sass-compile'));
+  watch('site/*.html').on('change', browserSync.reload);
 })

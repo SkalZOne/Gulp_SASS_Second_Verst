@@ -10,7 +10,7 @@
   letter-spacing: 0.2px;
 }
 
-header .firstcontent .buttons button:nth-child(2), header .navbar button {
+.fourthcontent button, header .firstcontent .buttons button:nth-child(2), header .navbar button {
   width: 139px;
   height: 52px;
   background-color: rgba(0, 0, 0, 0.1490196078);
@@ -32,6 +32,7 @@ body {
 
 button {
   border: 0;
+  cursor: pointer;
 }
 
 a {
@@ -224,7 +225,6 @@ header .firstcontent .screens .gradient {
 }
 
 .thirdcontent {
-  border: 2px solid white;
   margin-top: 150px;
   width: 1339px;
   height: 930.52px;
@@ -248,7 +248,6 @@ header .firstcontent .screens .gradient {
   width: 600px;
 }
 .thirdcontent .cards {
-  border: 2px solid white;
   width: 985px;
   height: 680px;
   margin-top: 70px;
@@ -291,7 +290,6 @@ header .firstcontent .screens .gradient {
   margin-top: 70px;
 }
 .thirdcontent .cards .card .macbook {
-  border: 0.5px solid black;
   width: 405.13px;
   height: 226.52px;
   margin-top: 60px;
@@ -327,5 +325,52 @@ header .firstcontent .screens .gradient {
   background-color: #9FA2A5;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.fourthcontent {
+  margin-top: 150px;
+  width: 1339px;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourthcontent p:nth-child(1) {
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0.2px;
+  margin: 20px 0;
+}
+.fourthcontent p:nth-child(2) {
+  width: 571px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.fourthcontent img {
+  border-radius: 10px;
+}
+.fourthcontent .cards:nth-child(3) {
+  width: 999px;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+.fourthcontent .cards:nth-child(3) img {
+  width: 225px;
+  height: 285px;
+}
+.fourthcontent .cards:nth-child(4) {
+  margin-top: 40px;
+  width: 1090px;
+  height: 285px;
+  display: flex;
+  justify-content: space-between;
+}
+.fourthcontent button {
+  margin-top: 60px;
+  width: 159px;
+  height: 52px;
 }
 /*# sourceMappingURL=site/main.css.map */

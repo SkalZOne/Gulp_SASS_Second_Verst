@@ -16,13 +16,8 @@ gulp.task('sass-compile', function(){
     .pipe(gulp.dest('site/css/'))
     .pipe(browserSync.stream())
 })
-
-// Автообработка
-gulp.task('watch', function(){
-    watch('./site/scss/**/*.scss', gulp.series('sass-compile'));
-})
 // Auto-reload
-gulp.task('browserSyncTask', function(){
+gulp.task('default', function(){
     browserSync.init({
         server: {
             baseDir: 'site/'

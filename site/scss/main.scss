@@ -1,7 +1,55 @@
+$dark_background: #181818;
+
+@import url('https://fonts.cdnfonts.com/css/graphik-trial');
+
 body {
-    opacity: .5;
-    box-sizing: border-box;
-    transform: scale(.5);
+    margin: 0;
+    font-family: 'Graphik Trial', sans-serif;
+}
+
+button {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: $dark_background;
+    height: 1675px;
+    width: 1343px;
     display: flex;
-    background: linear-gradient(45deg, rgb(70, 201, 70), black);
+    justify-content: center;
+
+    .navbar {
+        border: 2px solid green;
+        width: 1097px;
+        height: 119px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            margin-left: 45px;
+        }
+
+        .innernav {
+            border: 2px solid red;
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            width: 139px;
+            height: 52px;
+            background-color: #00000026;
+            border: 1px solid white;
+            box-shadow: 0px 4px 31px 0px #00000026;
+
+
+        }
+    }
 }

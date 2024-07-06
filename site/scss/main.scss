@@ -2,6 +2,32 @@ $dark_background: #181818;
 
 @import url(https://db.onlinewebfonts.com/c/105007d99d9df64c50cc24d696d79555?family=Graphik+Web+Regular+Regular);
 
+%purple_button {
+    background-color: #4452FE;
+    width: 178px;
+    height: 65px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+
+}
+
+%black_button {
+    width: 139px;
+    height: 52px;
+    background-color: #00000026;
+    border: 1px solid white;
+    font-size: 17px;
+    color: white;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+
 body {
     margin: 0;
     font-family: 'Graphik Web Regular Regular', sans-serif;
@@ -21,7 +47,7 @@ a {
 
 header {
     background: $dark_background;
-    height: 1675px;
+    height: 1520px;
     width: 1343px;
     display: flex;
     flex-direction: column;
@@ -46,49 +72,100 @@ header {
         }
 
         button {
-            width: 139px;
-            height: 52px;
-            background-color: #00000026;
-            border: 1px solid white;
-            font-size: 17px;
-            color: white;
-            line-height: 25px;
-            letter-spacing: 0.2px;
-            font-weight: 500;
-            margin-right: 30px;
+            @extend %black_button;
+        }
+    }
 
+// Первый контент-блок
+    .firstcontent {
+        width: 1339px;
+        height: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        p:nth-child(1) {
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 88px;
+            letter-spacing: 0.2px;
+            text-align: center;
+            width: 709px;
+            margin: 40px 0;
+        }
+    
+        p:nth-child(2) {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            text-align: center;
+            width: 600px;
+            padding: 0;
+        }
+
+        .buttons {
+            margin-top: 100px;
+            width: 420px;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+
+            button:nth-child(1) {
+                @extend %purple_button;
+            }
+            button:nth-child(2) {
+                @extend %black_button;
+                width: 174px;
+                height: 65px;
+            }
+        }
+
+        .screens {
+            margin-top: 100px;
+            width: 1339px;
+            height: 780px;
+            display: block;
+            z-index: 1;
+
+            img:nth-child(1) {
+                position: relative;
+                width: 466.53px;
+                height: 429.98px;
+                top: 1px;
+                left: 7px;
+                transform: rotateX(37.29deg);
+                rotate: -1deg;
+                margin-top: 150px;
+                margin-left: 165px;
+                
+            }
+            img:nth-child(2) {
+                width: 466.53px;
+                height: 451.48px;
+                transform: rotateX(37.29deg);
+            }
+            img:nth-child(3) {
+                position: absolute;
+                left: 401px;
+                top: 708px;
+                width: 465.82px;
+                height: 429.98px;
+                transform: rotateX(37.29deg);
+                rotate: -1deg;
+            }
+
+            .gradient {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0e0e 66.15%);
+                position: relative;
+                bottom: 355px;
+                width: 1339px;
+                height: 551px;
+                z-index: 1;
+            }
         }
     }
 }
 
-// Первый контент-блок
 
-.firstcontent {
-    border: 2px solid gray;
-    width: 1339px;
-    height: 393px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    p:nth-child(1) {
-        font-size: 80px;
-        font-weight: 500;
-        line-height: 88px;
-        letter-spacing: 0.2px;
-        text-align: center;
-        width: 709px;
-        margin: 40px 0;
-    }
-
-    p:nth-child(2) {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0.2px;
-        text-align: center;
-        width: 600px;
-        padding: 0;
-    }
-}
 
